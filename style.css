@@ -1,0 +1,7 @@
+/* put the button on the left-middle of the screen */
+.fixed-button{
+    position: fixed;
+    left: 0;
+    top: 50%;
+
+}
