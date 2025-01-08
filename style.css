@@ -1,7 +1,33 @@
-/* put the button on the left-middle of the screen */
-.fixed-button{
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: #F5F5DC;
+
+}
+
+.fixed-button {
     position: fixed;
     left: 0;
     top: 50%;
+}
 
+#clockDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: #F5F5DC;
+}
+
+#canvasForClock {
+    background-color: gold;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    align-items: center;
 }
