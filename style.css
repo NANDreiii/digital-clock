@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
     margin: 0;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,14 +21,66 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
     background-color: #F5F5DC;
+    margin-bottom: 0px;
 }
 
 #canvasForClock {
     background-color: gold;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    border-radius: 15px;
     align-items: center;
+    margin-top: 28px;
+}
+#map{
+    position: fixed;
+    background-color: aqua;
+    height: 200px;
+    width: 200px;
+    border: 5px black;
+    border-radius: 50%;    
+    top: 30px;
+    left: 20px;
+}
+#textForMap{
+    position: fixed;
+    font-size: 10px;
+    text-align: center;
+    top: 10px;
+    left: 50px;
+}
+#long{
+    position: fixed;
+    top: 5px;
+    left: 230px;
+    font-size: 10px;
+}
+#lat{
+    position: fixed;
+    top: 15px;
+    left: 230px;
+    font-size: 10px;
+}
+
+#London, #NewYork, #Paris, #Beijing{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#LondonTime, #NYTime, #ParisTime, #BeijingTime{
+    width: 80%;
+    height: 80%;
+    border: none;
+}
+
+
+#ClockContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
