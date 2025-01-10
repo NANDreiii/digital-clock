@@ -169,18 +169,22 @@ function changeToDefault(){
 }
 defButton.addEventListener('click', changeToDefault);
 
+
 const HEXbutton = document.getElementById('HEXbutton');
 const colourChange = document.getElementById('colorInput');
 
+//function to change background colour to the custom one, inserted by the user
 function changeColourHEX(){
-    newColour = colourChange.value;
+    newColour = colourChange.value;//get the colour from the input
+    //check if the hex code is valid
     if(newColour.startsWith('#') && newColour.length == 7){
+        //change background if the code is valid
         document.body.style.backgroundColor = newColour;
         document.getElementById('clockDiv').style.backgroundColor = newColour;
     }
     else{
+        //message if code is NOT valid
     alert('Input a valid HEX code.')
     }
 }
-
 HEXbutton.addEventListener('click', changeColourHEX);   

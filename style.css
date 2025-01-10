@@ -84,3 +84,7 @@ body{
     justify-content: space-around;
     width: 100%;
 }
+#colorInput{
+    width: 250px;
+    height: 35px;
+}
